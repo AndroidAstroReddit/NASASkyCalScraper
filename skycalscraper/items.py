@@ -12,7 +12,7 @@ class SkycalscraperItem(scrapy.Item):
     month = scrapy.Field()
     day = scrapy.Field()
     day_of_week = scrapy.Field()
-    #year is not necessary since the whole json file will be one year
+    year = scrapy.Field()
     time = scrapy.Field()
     event = scrapy.Field()
-
+    time_zone = scrapy.Field()
