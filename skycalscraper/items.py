@@ -9,6 +9,10 @@ import scrapy
 
 
 class SkycalscraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    month = scrapy.Field()
+    day = scrapy.Field()
+    day_of_week = scrapy.Field()
+    #year is not necessary since the whole json file will be one year
+    time = scrapy.Field()
+    event = scrapy.Field()
+
